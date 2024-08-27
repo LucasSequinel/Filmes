@@ -1,5 +1,5 @@
 body {
-    background-color: #E50914;
+    background-color: black;
     margin: 0;
     font-family: rubik;
 }
@@ -12,6 +12,7 @@ body {
 h1 {
     text-align: center;
     font-size: 54px;
+    color: white;
 }
 
 .pokedex {
