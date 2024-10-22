@@ -1,41 +1,67 @@
 body {
-    background-color: black;
+    background-color: #141414;
     margin: 0;
-    font-family: rubik;
+    font-family: Helvetica, Arial ,sans-serif;
+    
 }
+header{
+    background-color: transparent;
+    top:0;
+   
+    width: 100%;
+}
+
+.header-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header-brand{
+    max-width: 110px;
+}
+.main-nav{
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+.nav-item{
+    margin-right: 20px;
+    color: #e5e5e5;
+    opacity: .83;
+}
+.nav-item.active{
+    color: white;
+    opacity: 1;
+    font-weight: 500;
+}
+
 
 .container {
-    padding: 40px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
 }
 
-h1 {
-    text-align: center;
-    font-size: 54px;
-    color: white;
-}
-
-.pokedex {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 20px;
-    padding-inline-start: 0;
-}
 
 .card {
     list-style:none;
-    padding: 40px;
-    color: #222;
+    padding: 10px;
+    color: #e5e5e5;
     text-align: center;
-    border-radius: 20px;
-    position: relative;
+    position:relative;
+    
 }
 
 
 
-.card:hover {
-    animation: bounce 0.5s linear;
-}
+
 
 .card-title {
     text-transform: capitalize;
@@ -58,22 +84,4 @@ h1 {
     height: 180px;
     position: relative;
     z-index: 2;
-}
-
-@keyframes bounce {
-    20% {
-        transform: translateY(-6px);
-    }
-
-    40% {
-        transform: translateY(0px);
-    }
-
-    80% {
-        transform: translateY(-2px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
 }
